@@ -4,6 +4,7 @@ import Home from "@/scenes/home"
 import { useEffect, useState } from "react"
 import { SelectedPage } from '@/shared/type'
 import Benefit from '@/scenes/benefits'
+import OurClasses from '@/scenes/OurClasses'
 
 function App() {
   const [selectedPage, setSelectedPage] = useState<SelectedPage>(SelectedPage.Home)
@@ -24,6 +25,7 @@ function App() {
       <Navbar isTopOfPage={isTopOfPage} selectedPage={selectedPage} setSelectedPage={setSelectedPage}></Navbar>
       <Home setSelectedPage={setSelectedPage}></Home>
       <Benefit setSelectedPage={setSelectedPage}></Benefit>
+      <OurClasses setSelectedPage={setSelectedPage}></OurClasses>
     </>
   )
 }
