@@ -21,7 +21,7 @@ export default function Navbar({isTopOfPage, selectedPage, setSelectedPage }: Pr
         <nav>
             <div className={`${navbarbackgroup} ${flexBetween} w-full border mx-auto p-5`}>
                 <div className={`${flexBetween} mx-auto`}>
-                    <div className={`${flexBetween} gap-16`}>
+                    <div className={`${flexBetween} gap-[15rem]`}>
                         {/* left side  */}
                         <img src={logo} alt="" />
 
